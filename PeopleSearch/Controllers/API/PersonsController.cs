@@ -41,6 +41,8 @@ namespace PeopleSearch.Controllers.API
 	    [HttpPost]
 	    public IHttpActionResult CreatePerson(Person person)
 	    {
+			person.Added = DateTime.Today;
+
 		    if (!ModelState.IsValid)
 		    {
 			    return BadRequest();

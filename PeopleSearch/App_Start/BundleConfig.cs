@@ -15,7 +15,8 @@ namespace PeopleSearch
 						"~/Scripts/respond.js",
 						"~/Scripts/datatables/jquery.datatables.js",
 						"~/Scripts/datatables/datatables.bootstrap.js",
-						"~/Scripts/jquery-ui.js"));
+						"~/Scripts/jquery-ui.js",
+						"~/Scripts/date.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
 						"~/Scripts/jquery.validate*"));

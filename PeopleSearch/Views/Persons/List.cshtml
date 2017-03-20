@@ -57,8 +57,8 @@
 						data: "dateOfBirth",
 						render: function(data)
 						{
-							var dob = new Date(data);
-							return dob.getMonth() + "/" + dob.getDate() + "/" + dob.getFullYear();
+							var dob = Date.parse(data);
+							return dob.toString("MM/dd/yyyy");
 						}
 					},
 					{
@@ -68,8 +68,8 @@
 						data: "added",
 						render: function (data)
 						{
-							var dob = new Date(data);
-							return dob.getMonth() + "/" + dob.getDate() + "/" + dob.getFullYear();
+							var addedDate = Date.parse(data);
+							return addedDate.toString("MM/dd/yyyy");
 						}
 					},
 					{

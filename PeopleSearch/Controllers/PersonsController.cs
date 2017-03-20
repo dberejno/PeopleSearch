@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Data.Entity;
 using System.Web.Mvc;
 using PeopleSearch.Models;
 using PeopleSearch.ViewModels;
@@ -59,8 +57,8 @@ namespace PeopleSearch.Controllers
 			}
 
 		    if (person.Id == 0)
-		    {
-			    person.Added = DateTime.Now;
+		    {				
+			    person.Added = DateTime.Today;
 			    _context.Persons.Add(person);
 		    }
 		    else
